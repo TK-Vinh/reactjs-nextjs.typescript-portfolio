@@ -1,4 +1,4 @@
-import { ServiceData } from "@/app/component/types/types.d";
+import { ServiceData } from "@/component/types/types.d";
 
 
 function Service(serviceData: ServiceData) {
