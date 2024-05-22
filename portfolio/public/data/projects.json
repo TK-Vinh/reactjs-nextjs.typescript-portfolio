@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "title": "Portfolio Website",
+            "image": "/images/PortfolioWebsite.webp",
+            "link": "",
+            "tags": [
+                "Next.js",
+                "Typescript",
+                "ReactJS",
+                "TailwindCSS"
+            ],
+            "text": "A portfolio website with responsive design that highlights professional work and services"
+        },
+        {
+            "title": "To do list App",
+            "image": "/images/TodolistWebsite.webp",
+            "link": "",
+            "tags": [
+                "Typescript",
+                "ReactJS"
+            ],
+            "text": "A single-page application with responsive design"
+        },
+        {
+            "title": "Book Store Website",
+            "image": "/images/BookStoreWebsite.webp",
+            "link": "",
+            "tags": [
+                "React.js",
+                "Typescript",
+                "Tailwind CSS",
+                "Redux"
+            ],
+            "text": "A website to curate and share photos that capture life's most memorable moments."
+        }
+    ]
+}

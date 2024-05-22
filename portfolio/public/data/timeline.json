@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "title": "Backend Developer",
+            "company": "Freelancing",
+            "tasks": "Using API integration to build modern web such as landingpages and dashboards",
+            "tags": [
+                "C++",
+                "Java",
+                "Python"
+            ],
+            "year": "2021"
+        },
+        {
+            "title": "Business Analyst",
+            "company": "Freelancing",
+            "tasks": "analyzing data models and derive logical conclusions, develop innovative solutions.",
+            "tags": [],
+            "year": "2023"
+        },
+        {
+            "title": "Frontend Engineer",
+            "company": "Freelancing",
+            "tasks": "Designed and implemented responsive user interfaces for various web applications, ensuring seamless user experiences across devices.",
+            "tags": [
+                "React",
+                "Typescript",
+                "HTML/CSS/Javascript",
+                "Next.js",
+                "TailwindCSS"
+            ],
+            "year": "2024"
+        }
+    ]
+}
