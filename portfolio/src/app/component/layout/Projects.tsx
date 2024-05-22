@@ -1,5 +1,5 @@
 import Project from "@/static/Project";
-import projectData from "/home/genchi/reactjs-nextjs.typescript-portfolio/portfolio/public/data/projects.json"
+import projectData from "/../../../public/data/projects.json"
 
 function Projects() {
     return <div id="Projects" className="bg-gradient-to-r from-gradientLeft to-gradientRight">
