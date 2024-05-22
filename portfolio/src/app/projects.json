@@ -6,26 +6,25 @@
             "link": "",
             "tags": [
                 "Next.js",
-                "Javascript",
-                "Redux",
-                "MUI"
+                "Typescript",
+                "ReactJS",
+                "TailwindCSS"
             ],
             "text": "A portfolio website with responsive design that highlights professional work and services"
         },
         {
-            "title": "Trading App",
-            "image": "/images/TradingApp.webp",
+            "title": "To do list App",
+            "image": "/images/TodolistWebsite.webp",
             "link": "",
             "tags": [
-                "Next.js",
                 "Typescript",
-                "Tailwind CSS"
+                "ReactJS"
             ],
-            "text": "A single-page application with responsive design that highlights professional work"
+            "text": "A single-page application with responsive design"
         },
         {
-            "title": "Photo Website",
-            "image": "/images/PhotoWebsite.webp",
+            "title": "Book Store Website",
+            "image": "/images/BookStoreWebsite.webp",
             "link": "",
             "tags": [
                 "React.js",

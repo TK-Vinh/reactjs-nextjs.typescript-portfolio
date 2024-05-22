@@ -1,5 +1,7 @@
+'use client'
+
 import Project from "@/static/Project";
-import projectData from "../../../public/data/projects.json"
+import projectData from "@/app/projects.json"
 
 function Projects() {
     return <div id="Projects" className="bg-gradient-to-r from-gradientLeft to-gradientRight">

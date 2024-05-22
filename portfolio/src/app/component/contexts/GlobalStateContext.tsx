@@ -3,6 +3,7 @@
 import React, { createContext, useState, useContext } from 'react';
 import { GlobalState } from '../types/types.d';
 
+
 const GlobalStateContext = createContext<GlobalState | undefined>(undefined);
 
 export const useGlobalState = (): GlobalState => {
