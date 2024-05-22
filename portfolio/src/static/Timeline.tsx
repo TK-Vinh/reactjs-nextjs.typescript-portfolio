@@ -1,4 +1,4 @@
-import timelineData from "../../src/app/data/timeline.json"
+import timelineData from "../../public/data/timeline.json"
 import Tag from "./Tag";
 
 function Timeline() {
