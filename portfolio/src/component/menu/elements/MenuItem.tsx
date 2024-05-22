@@ -1,5 +1,4 @@
-import { useGlobalState } from "../../contexts/GlobalStateContext";
-
+import { useGlobalState } from "@/component/contexts/GlobalStateContext";
 
 function MenuItem({ title }: { title: string }) {
 

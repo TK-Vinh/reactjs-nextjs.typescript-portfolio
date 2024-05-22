@@ -2,8 +2,7 @@
 
 import Contact from "@/static/Contact";
 import Close from "../menu/elements/Close";
-import { useGlobalState } from "../contexts/GlobalStateContext";
-
+import { useGlobalState } from "@/component/contexts/GlobalStateContext";
 
 function Modal() {
 

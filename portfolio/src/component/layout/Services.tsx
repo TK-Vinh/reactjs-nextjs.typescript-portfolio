@@ -8,7 +8,7 @@ function Services() {
         <div className="flex desktop:flex-row mobile:flex-col mobile:items-center flex-grow justify-around text-center">
             <Service hl="Single Page Applications" desc="Development of responsive web apps such as portfolios, landingpages and dashboards" img="/icons/spa.svg" />
             <Service hl="API Integration" desc="Seamless integration into your solution for dynamic content delivery" img="/icons/api.svg" />
-            <Service hl="Performance/Security Optimization" desc="Enhancing performance of your web application" img="/icons/seo.svg" />
+            <Service hl="SEO Optimization" desc="Enhancing visibility and rankings of your web application" img="/icons/seo.svg" />
         </div>
         <p className="desktop:text-[40px] mobile:text-[24px] font-bold text-center mb-4">You have a project? Get in Touch</p>
         <ContactBtn title={"Contact Me"} />

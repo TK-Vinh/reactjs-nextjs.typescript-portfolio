@@ -1,4 +1,3 @@
-
 import Project from "@/static/Project";
 import projectData from "../../../public/data/projects.json"
 
