@@ -3,11 +3,9 @@
         {
             "title": "Backend Developer",
             "company": "Freelancing",
-            "tasks": "Using API integration to build modern web such as landingpages and dashboards",
+            "tasks": "Using mvc2 design pattern to build basic web such as landingpages and dashboards",
             "tags": [
-                "C++",
-                "Java",
-                "Python"
+                "Java"
             ],
             "year": "2021"
         },
@@ -21,9 +19,11 @@
         {
             "title": "Frontend Engineer",
             "company": "Freelancing",
-            "tasks": "Designed and implemented responsive user interfaces for various web applications, ensuring seamless user experiences across devices.",
+            "tasks": "Designed and implemented responsive user interfaces for various web/app applications, ensuring seamless user experiences across devices.",
             "tags": [
                 "React",
+                "React Native",
+                "Flutter",
                 "Typescript",
                 "HTML/CSS/Javascript",
                 "Next.js",
