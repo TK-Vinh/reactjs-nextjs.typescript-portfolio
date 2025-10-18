@@ -13,26 +13,29 @@
             "text": "A portfolio website with responsive design that highlights professional work and services"
         },
         {
-            "title": "To do list App",
+            "title": "Formale App",
             "image": "/images/TodolistWebsite.webp",
             "link": "",
             "tags": [
                 "Typescript",
-                "ReactJS"
+                "Expo",
+                "React Native"
             ],
-            "text": "A single-page application with responsive design"
+            "text": "A full-fledged app catered to male appearances through e-wardrobe and AI outfit recommendation implementing ecommerce and subscription flow into the project"
         },
         {
-            "title": "Book Store Website",
+            "title": "TechRent App/Web",
             "image": "/images/BookStoreWebsite.webp",
             "link": "",
             "tags": [
                 "React.js",
+                "React Native",
                 "Typescript",
                 "Tailwind CSS",
-                "Redux"
+                "Expo",
+                "Zustand"
             ],
-            "text": "A website to curate and share photos that capture life's most memorable moments."
+            "text": "Current web/app project with goal to help businesses securely and conveniently rent tech devices with detailed flow of renting process"
         }
     ]
 }
