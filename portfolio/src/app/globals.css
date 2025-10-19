@@ -67,7 +67,8 @@ body {
   position: relative;
   min-height: 28rem;
   overflow: hidden;
-  transition: height 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  will-change: transform, box-shadow;
 }
 
 .project-card::after {
@@ -82,7 +83,6 @@ body {
 }
 
 .project-card--hovered {
-  height: auto;
   transform: translateY(-12px);
   box-shadow: 0 40px 90px -50px rgba(56, 189, 248, 0.35), 0 25px 60px -45px rgba(129, 140, 248, 0.4);
   z-index: 20;
@@ -91,7 +91,8 @@ body {
 @media (min-width: 1024px) {
   .project-card--hovered {
     position: absolute;
-    inset: 0;
+    inset: -1.5rem;
+    min-height: calc(100% + 3rem);
   }
 }
 

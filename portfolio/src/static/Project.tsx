@@ -12,7 +12,7 @@ interface ProjectProps {
 
 function Project({ headline, image, text, tags, link, isHovered = false }: ProjectProps) {
     return (
-        <a className="group relative block h-full" href={link} aria-label={text}>
+        <a className="group relative block h-full overflow-visible" href={link} aria-label={text}>
             <GlassCard
                 as="article"
                 className={`project-card flex h-full w-full flex-col overflow-hidden bg-slate-900/60 text-white ${isHovered ? "project-card--hovered" : ""}`}
