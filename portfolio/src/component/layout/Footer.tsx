@@ -6,7 +6,7 @@ import SocialMedia from "@/static/SocialMedia";
 
 function Footer() {
     return (
-        <footer className="relative mt-32 overflow-hidden bg-slate-950 text-slate-300">
+        <footer className="relative overflow-hidden bg-slate-950 text-slate-300">
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-grid-slate-900 opacity-40" />
                 <div className="absolute -top-32 left-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-sky-500/25 blur-3xl" />

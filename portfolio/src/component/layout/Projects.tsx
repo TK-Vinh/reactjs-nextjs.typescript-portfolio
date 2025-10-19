@@ -17,7 +17,7 @@ function Projects() {
                 </p>
             </div>
 
-            <div className="mt-14 flex flex-wrap justify-center gap-8" role="list">
+            <div className="mt-14 grid gap-8 sm:grid-cols-2 xl:grid-cols-3" role="list">
                 {projectData.data.map((item, index) =>
                     <Project key={index} headline={item.title} image={item.image} text={item.text} tags={item.tags} link={item.link} />
                 )}
