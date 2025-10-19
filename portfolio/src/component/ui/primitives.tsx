@@ -1,7 +1,7 @@
 import type { ElementType, HTMLAttributes } from "react";
 
 const baseCardClasses =
-  "relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-slate-900/30 transition-all duration-500";
+  "relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-slate-900/30 transition-all duration-500 [mask-image:radial-gradient(circle_at_top,white,transparent_190%)]";
 
 export interface GlassCardProps extends HTMLAttributes<HTMLElement> {
   as?: ElementType;
@@ -23,7 +23,6 @@ export function GlassCard({
       ? "before:absolute before:inset-0 before:-translate-y-full before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-0 before:transition before:duration-700 hover:before:translate-y-0 hover:before:opacity-100"
       : "",
     hoverLift ? "hover:-translate-y-2 hover:shadow-3xl" : "",
-    "[mask-image:radial-gradient(circle_at_top,white,transparent_75%)]",
     className
   ]
     .filter(Boolean)
