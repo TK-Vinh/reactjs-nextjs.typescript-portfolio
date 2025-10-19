@@ -32,3 +32,26 @@ body {
 * {
   scroll-behavior: smooth !important;
 }
+
+.project-card {
+  overflow: hidden;
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+  height: auto;
+}
+
+.project-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  transition: -webkit-line-clamp 0.3s ease;
+}
+
+.project-card:hover .project-text {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
