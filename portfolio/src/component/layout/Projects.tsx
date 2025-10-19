@@ -17,11 +17,13 @@ function Projects() {
                 </p>
             </div>
 
-            <div className="mt-14 grid gap-8 sm:grid-cols-2 xl:grid-cols-3" role="list">
+            <ul className="mt-14 flex list-none gap-8 overflow-x-auto pb-6 xl:justify-center" role="list">
                 {projectData.data.map((item, index) =>
-                    <Project key={index} headline={item.title} image={item.image} text={item.text} tags={item.tags} link={item.link} />
+                    <li key={index} className="w-[min(90vw,22.5rem)] flex-shrink-0 xl:w-80">
+                        <Project headline={item.title} image={item.image} text={item.text} tags={item.tags} link={item.link} />
+                    </li>
                 )}
-            </div>
+            </ul>
         </div>
     </section>;
 }
