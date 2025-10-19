@@ -15,7 +15,7 @@
         {
             "title": "Formale App",
             "image": "/images/Formale.webp",
-            "link": "",
+            "link": "https://formale-landing.vercel.app",
             "tags": [
                 "Typescript",
                 "Expo",
@@ -24,9 +24,9 @@
             "text": "A full-fledged app catered to male appearances through e-wardrobe and AI outfit recommendation implementing ecommerce and subscription flow into the project"
         },
         {
-            "title": "TechRent App/Web",
+            "title": "Ho Chi Minh E-Learning wwebsite",
             "image": "/images/BookStoreWebsite.webp",
-            "link": "",
+            "link": "https://hcm202-three.vercel.app",
             "tags": [
                 "React.js",
                 "React Native",
@@ -35,7 +35,7 @@
                 "Expo",
                 "Zustand"
             ],
-            "text": "Current web/app project with goal to help businesses securely and conveniently rent tech devices with detailed flow of renting process"
+            "text": "Help students learning the Ho Chi Minh's ideology through various methods such as quiz, document, text to audio and AI chatbot refined to only answer suibject related questions"
         }
     ]
 }
