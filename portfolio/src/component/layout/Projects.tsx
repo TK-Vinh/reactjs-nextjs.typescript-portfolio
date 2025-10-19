@@ -23,7 +23,7 @@ function Projects() {
                 </p>
             </div>
 
-            <ul className="mt-14 grid list-none gap-10 md:grid-cols-3" role="list">
+            <ul className="mt-14 grid list-none gap-10 desktop:grid-cols-3" role="list">
                 {projectData.data.map((item, index) => {
                     const isHovered = hoveredIndex === index;
 
