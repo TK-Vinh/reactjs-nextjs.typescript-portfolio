@@ -1,10 +1,23 @@
 import { AccentPill, GlassCard, GradientTitle } from "@/component/ui/primitives";
 import Tag from "./Tag";
 
-function Project({ headline, image, text, tags, link }: { headline: string, image: string, text: string, tags: string[], link: string }) {
+interface ProjectProps {
+    headline: string;
+    image: string;
+    text: string;
+    tags: string[];
+    link: string;
+    isHovered?: boolean;
+}
+
+function Project({ headline, image, text, tags, link, isHovered = false }: ProjectProps) {
     return (
-        <a className="group block h-full" href={link} aria-label={text}>
-            <GlassCard as="article" className="project-card flex h-full w-full flex-col overflow-hidden bg-slate-900/60 text-white" hoverLift={false}>
+        <a className="group relative block h-full" href={link} aria-label={text}>
+            <GlassCard
+                as="article"
+                className={`project-card flex h-full w-full flex-col overflow-hidden bg-slate-900/60 text-white ${isHovered ? "project-card--hovered" : ""}`}
+                hoverLift={false}
+            >
                 <div className="relative h-52 overflow-hidden">
                     <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" alt={text} src={image} />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90" aria-hidden />

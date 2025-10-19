@@ -1,8 +1,14 @@
+"use client";
+
+import { useState } from "react";
+
 import { AccentPill, GradientTitle } from "@/component/ui/primitives";
 import Project from "@/static/Project";
 import projectData from "../../../public/data/projects.json";
 
 function Projects() {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
     return <section id="Projects" className="relative overflow-hidden bg-slate-900 py-24">
         <div className="pointer-events-none absolute inset-0 -z-20 bg-grid-slate-900 opacity-50" aria-hidden />
         <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-950 opacity-90" aria-hidden />
@@ -17,12 +23,28 @@ function Projects() {
                 </p>
             </div>
 
-            <ul className="mt-14 flex list-none gap-8 overflow-x-auto pb-6 xl:justify-center" role="list">
-                {projectData.data.map((item, index) =>
-                    <li key={index} className="w-[min(90vw,22.5rem)] flex-shrink-0 xl:w-80">
-                        <Project headline={item.title} image={item.image} text={item.text} tags={item.tags} link={item.link} />
-                    </li>
-                )}
+            <ul className="mt-14 grid list-none gap-10 sm:grid-cols-2 xl:grid-cols-3" role="list">
+                {projectData.data.map((item, index) => {
+                    const isHovered = hoveredIndex === index;
+
+                    return <li
+                        key={index}
+                        className="relative min-h-[28rem] pb-16"
+                        onMouseEnter={() => setHoveredIndex(index)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                        onFocus={() => setHoveredIndex(index)}
+                        onBlur={() => setHoveredIndex(null)}
+                    >
+                        <Project
+                            headline={item.title}
+                            image={item.image}
+                            text={item.text}
+                            tags={item.tags}
+                            link={item.link}
+                            isHovered={isHovered}
+                        />
+                    </li>;
+                })}
             </ul>
         </div>
     </section>;

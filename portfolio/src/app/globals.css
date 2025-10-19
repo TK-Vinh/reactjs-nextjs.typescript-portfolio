@@ -65,7 +65,7 @@ body {
 
 .project-card {
   position: relative;
-  height: 28rem;
+  min-height: 28rem;
   overflow: hidden;
   transition: height 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -81,13 +81,21 @@ body {
   pointer-events: none;
 }
 
-.group:hover .project-card {
+.project-card--hovered {
   height: auto;
   transform: translateY(-12px);
   box-shadow: 0 40px 90px -50px rgba(56, 189, 248, 0.35), 0 25px 60px -45px rgba(129, 140, 248, 0.4);
+  z-index: 20;
 }
 
-.group:hover .project-card::after {
+@media (min-width: 1024px) {
+  .project-card--hovered {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.project-card--hovered::after {
   opacity: 1;
   transform: scale(1);
 }
@@ -101,7 +109,7 @@ body {
   transition: -webkit-line-clamp 0.3s ease;
 }
 
-.group:hover .project-text {
+.project-card--hovered .project-text {
   -webkit-line-clamp: unset;
   overflow: visible;
 }
