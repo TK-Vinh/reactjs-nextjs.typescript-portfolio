@@ -3,7 +3,12 @@
 import { useGlobalState } from "@/component/contexts/GlobalStateContext";
 import { useEffect } from "react";
 
-const ContactBtn = ({ title }: { title: string }) => {
+interface ContactBtnProps {
+    title: string;
+    className?: string;
+}
+
+const ContactBtn = ({ title, className = "" }: ContactBtnProps) => {
 
     const { isModalOpen, toggleModal, exitMenu } = useGlobalState();
 
@@ -20,9 +25,16 @@ const ContactBtn = ({ title }: { title: string }) => {
         }
     }, [isModalOpen]);
 
-    return (<button className='flex items-center cursor-pointer'>
-        <div aria-label={title} className={"transition ease-in-out duration-300 text-center border-2 border-white rounded-3xl px-3 py-1 hover:bg-white hover:text-black"} onClick={handleClick} >{title}</div>
-    </button>
+    return (
+        <button
+            type="button"
+            aria-label={title}
+            onClick={handleClick}
+            className={`group inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-gradient-to-r from-sky-500/80 to-indigo-500/80 px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow-lg shadow-slate-900/40 transition duration-300 hover:-translate-y-1 hover:shadow-3xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 ${className}`}
+        >
+            <span>{title}</span>
+            <span aria-hidden className="h-2 w-2 rounded-full bg-white/80 transition group-hover:bg-sky-100" />
+        </button>
     );
 }
 
