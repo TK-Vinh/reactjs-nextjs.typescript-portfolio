@@ -1,4 +1,4 @@
-import { AccentPill, GradientTitle } from "@portfolio/ui-primitives";
+import { AccentPill, GradientTitle } from "@/component/ui/primitives";
 import Project from "@/static/Project";
 import projectData from "../../../public/data/projects.json";
 

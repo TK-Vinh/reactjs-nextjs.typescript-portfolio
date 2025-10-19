@@ -1,4 +1,4 @@
-import { GlassCard, GradientTitle, AccentPill } from "@portfolio/ui-primitives";
+import { GlassCard, GradientTitle, AccentPill } from "@/component/ui/primitives";
 import { ServiceData } from "@/component/types/types.d";
 
 function Service({ hl, desc, img, bullets = [], badge }: ServiceData) {

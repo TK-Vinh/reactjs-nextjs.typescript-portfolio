@@ -1,4 +1,4 @@
-import { AccentPill, GlassCard, GradientTitle } from "@portfolio/ui-primitives";
+import { AccentPill, GlassCard, GradientTitle } from "@/component/ui/primitives";
 import Service from "@/static/Service";
 import ContactBtn from "../menu/elements/ContactBtn";
 

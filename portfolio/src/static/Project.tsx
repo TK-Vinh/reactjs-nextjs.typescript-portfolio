@@ -1,4 +1,4 @@
-import { AccentPill, GlassCard, GradientTitle } from "@portfolio/ui-primitives";
+import { AccentPill, GlassCard, GradientTitle } from "@/component/ui/primitives";
 import Tag from "./Tag";
 
 function Project({ headline, image, text, tags, link }: { headline: string, image: string, text: string, tags: string[], link: string }) {
