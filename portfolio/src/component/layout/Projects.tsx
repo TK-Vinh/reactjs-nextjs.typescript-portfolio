@@ -29,7 +29,7 @@ function Projects() {
 
                     return <li
                         key={index}
-                        className="relative min-h-[28rem] overflow-visible pb-16"
+                        className="relative min-h-[32rem] overflow-visible"
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                         onFocus={() => setHoveredIndex(index)}
