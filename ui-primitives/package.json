@@ -1,0 +1,10 @@
+{
+  "name": "@portfolio/ui-primitives",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}

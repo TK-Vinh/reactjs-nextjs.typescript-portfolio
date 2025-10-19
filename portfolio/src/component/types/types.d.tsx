@@ -11,4 +11,6 @@ export interface ServiceData {
     hl: string;
     desc: string;
     img: string;
+    badge?: string;
+    bullets?: string[];
 }
